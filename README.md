@@ -1,6 +1,6 @@
 # Quasar Pomodoro Timer App
 
-Classic minimalistic Pomodoro timer powered by Quasar Framework on VueJS 3 (Composition API)
+Classic minimalistic Pomodoro timer powered by Quasar Framework on VueJS 3 (Composition API) with Dark mode toggle
 
 ## Install the dependencies
 ```bash
