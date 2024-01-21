@@ -5,7 +5,6 @@
       <h4>{{ actualRound }}/{{ rounds }}</h4>
     </div>
 
-
     <div class="text-center">
 
       <q-circular-progress
@@ -87,11 +86,14 @@ import {ref, watch} from 'vue'
 import moment from 'moment'
 import timer from '/src/enums/timer'
 import alarm from '/src/sounds/alarm.mp3'
+import '@quasar/quasar-ui-qmarkdown/dist/index.css'
+
 
 const {FOCUS, SHORT, LONG, ROUNDS} = timer
 
 export default {
   name: "TimerComponent",
+  components: {},
   setup() {
 
     let steps = ref({
@@ -225,8 +227,10 @@ export default {
           setNextStep()
         }, 1000)
     })
+    const model = ref(false)
 
     return {
+      model,
       timerValue,
       timerDisplay,
       initCountdownTimer,
